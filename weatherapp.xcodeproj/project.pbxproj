@@ -124,7 +124,6 @@
 		A3265A4D24CE13E90053BFDA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A375F43924DB357800F98138 /* City5Days3HoursAllHoursForOneDayViewModel.swift */,
 				A35AB15424D0C64900D3ECEA /* CityListViewController.swift */,
 				A3B2DFD124CE33600023A89D /* CitySearchViewController.swift */,
 				A3A5818D24CCE75D00FD68B0 /* MainViewController.swift */,
@@ -225,6 +224,7 @@
 		A3AAFF5424D35E4700CA0052 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A375F43924DB357800F98138 /* City5Days3HoursAllHoursForOneDayViewModel.swift */,
 				A398020A24DF4FFC006AFDD9 /* City5Days3HoursViewModel.swift */,
 				A398020824DF4C3B006AFDD9 /* CityCurrentWeatherViewModel.swift */,
 				A3AAFF5524D35E7A00CA0052 /* SettingsViewModel.swift */,
