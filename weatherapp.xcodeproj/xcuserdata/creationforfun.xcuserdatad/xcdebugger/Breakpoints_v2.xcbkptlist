@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "45E3B595-F9BF-4BE0-BDF1-A428D716C46B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B0F7FBB-239B-4F47-A7A5-947EF98E9605"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "weatherapp/TableViewCells/CityListTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "handleRequestCurrentWeather(result:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5B0F7FBB-239B-4F47-A7A5-947EF98E9605 - 4e31a4104de8229e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "weatherapp.CityListTableViewCell.(handleRequestCurrentWeather in _04E6A91E218391D9D7D9399B9D053E7A)(result: Swift.Result&lt;weatherapp.WACityCurrentWeather, weatherapp.WANetworkError.NetworkError&gt;) -&gt; ()"
+                  moduleName = "weatherapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/RAM%20Disk/38%20weatherapp%20-%20github%20version%20without%20git/weatherapp/TableViewCells/CityListTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "153">
+               </Location>
+               <Location
+                  uuid = "5B0F7FBB-239B-4F47-A7A5-947EF98E9605 - 4e31a4104de8229e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "weatherapp.CityListTableViewCell.(handleRequestCurrentWeather in _04E6A91E218391D9D7D9399B9D053E7A)(result: Swift.Result&lt;weatherapp.WACityCurrentWeather, weatherapp.WANetworkError.NetworkError&gt;) -&gt; ()"
+                  moduleName = "weatherapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/RAM%20Disk/38%20weatherapp%20-%20github%20version%20without%20git/weatherapp/TableViewCells/CityListTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "185">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

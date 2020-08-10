@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S1K-Fw-ghc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CitySearchViewController-->
+        <scene sceneID="mOO-xj-NWh">
+            <objects>
+                <viewController id="mIz-om-dgs" userLabel="CitySearchViewController" customClass="CitySearchViewController" customModule="weatherapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fTU-fm-gcE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0I1-Aq-Roi">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CitySearchTableViewCell" rowHeight="86" id="OMP-nz-yDF" userLabel="CitySearchTableViewCell" customClass="CitySearchTableViewCell" customModule="weatherapp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="86"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OMP-nz-yDF" id="wVM-Ja-xgO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CityLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCs-ZU-GD9">
+                                                    <rect key="frame" x="20" y="10" width="374" height="66"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="tCs-ZU-GD9" secondAttribute="bottom" constant="10" id="6Dq-aa-Q9N"/>
+                                                <constraint firstItem="tCs-ZU-GD9" firstAttribute="top" secondItem="wVM-Ja-xgO" secondAttribute="top" constant="10" id="K61-LP-6vR"/>
+                                                <constraint firstAttribute="trailing" secondItem="tCs-ZU-GD9" secondAttribute="trailing" constant="20" id="jef-HY-G3i"/>
+                                                <constraint firstItem="tCs-ZU-GD9" firstAttribute="leading" secondItem="wVM-Ja-xgO" secondAttribute="leading" constant="20" id="z06-ut-dQ8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cityLabel" destination="tCs-ZU-GD9" id="lAK-HO-pgl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qKF-Lm-un9" firstAttribute="bottom" secondItem="0I1-Aq-Roi" secondAttribute="bottom" id="2pZ-hZ-kpu"/>
+                            <constraint firstItem="0I1-Aq-Roi" firstAttribute="leading" secondItem="qKF-Lm-un9" secondAttribute="leading" id="NAD-9e-WtI"/>
+                            <constraint firstItem="0I1-Aq-Roi" firstAttribute="top" secondItem="qKF-Lm-un9" secondAttribute="top" id="Yj7-3r-YJU"/>
+                            <constraint firstItem="qKF-Lm-un9" firstAttribute="trailing" secondItem="0I1-Aq-Roi" secondAttribute="trailing" id="xNI-1a-KXz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qKF-Lm-un9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z85-z0-sfd"/>
+                    <connections>
+                        <outlet property="citySearchTableView" destination="0I1-Aq-Roi" id="4oj-3J-UFa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rbG-mx-QCL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="25.446428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fcO-qy-Uch">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S1K-Fw-ghc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uFw-xO-0ma">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mIz-om-dgs" kind="relationship" relationship="rootViewController" id="2Vz-PH-zxm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igz-wd-F73" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="25.446428571428569"/>
+        </scene>
+    </scenes>
+</document>
